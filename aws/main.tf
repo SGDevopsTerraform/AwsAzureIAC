@@ -1,7 +1,7 @@
 resource "aws_vpc" "sgapp" {
   cidr_block = var.sgapp-vpc-range
   tags = {
-    Name = "sgapp"
+    Name = "sg-app-vpc"
   }
 
 }
