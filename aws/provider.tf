@@ -9,5 +9,5 @@ required_providers {
 }
 
 provider "aws" {
-  region = var.region
+  region = var.sgapp-region
 }

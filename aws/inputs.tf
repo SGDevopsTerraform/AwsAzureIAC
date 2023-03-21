@@ -1,28 +1,28 @@
-variable "sg-region" {
+variable "sgapp-region" {
   type        = string
   default     = "us-east-1"
   description = "Region to create resources"
 }
 
-variable "sg-vpc-range" {
+variable "sgapp-vpc-range" {
   type        = string
   default     = "192.168.0.0/16"
   description = "VPC Cidr Range"
 }
 
-variable "sg-Subnet-cidrs" {
+variable "sgapp-Subnet-cidrs" {
   type    = list(string)
   default = ["192.168.0.0/24", "192.168.1.0/24", "192.168.2.0/24", "192.168.3.0/24"]
 }
 
-variable "sg-subnet-azs" {
+variable "sgapp-subnet-azs" {
   type    = list(string)
   default = ["a", "b", "a", "b"]
 
 }
 
-variable "sg-subnet-names" {
+variable "sgapp-subnet-names" {
   type    = list(string)
-  default = ["app1", "app2", "db1", "db2"]
+  default = ["sgapp1", "sgapp2", "sgdb1", "sgdb2"]
 
 }
